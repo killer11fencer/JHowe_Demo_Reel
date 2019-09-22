@@ -1,3 +1,5 @@
 module.exports = {
-    get_videos: 
+    get_videos: (req,res) => {
+        
+    }
 }
