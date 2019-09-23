@@ -20,6 +20,8 @@ class Home extends Component {
                 </header>
             <div>{displayReel}</div>
             <div>{displayHighlights}</div>
+            <div>description of the company and goal</div>
+            <div>Invite to action or contact</div>
             <footer>Contact Info</footer>
         </div>) 
         
