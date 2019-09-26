@@ -6,7 +6,7 @@ class Contact extends Component {
         this.state = {
             first_name: '',
             last_name: '',
-            company:'',
+            business:'',
             project:'',
             email:'',
             phone:''
@@ -22,6 +22,14 @@ class Contact extends Component {
                 <h4>Name</h4>
                 <input name='first_name' onChange={this.handleChange}/>
                 <input name='last_name' onChange={this.handleChange}/>
+                <h4>Business Name</h4>
+                <input name='business' onChange={this.handleChange}/>
+                <h4>Email</h4>
+                <input name='email' onChange={this.handleChange}/>
+                <h4>Phone</h4>
+                <input name='phone' onChange={this.handleChange}/>
+                <h4>Tell us about your project</h4>
+                <input name='project' onChange={this.handleChange}/>
             </div>
         )
     }
