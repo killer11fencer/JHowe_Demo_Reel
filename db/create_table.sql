@@ -13,3 +13,24 @@ create table dr.videos {
     description varchar(255),
     hierarchy_id int
 }
+
+create table dr.heirarchy_id {
+    id serial NOT NULL
+
+}
+
+create table dr.about {
+    id serial NOT NULL,
+    header text,
+    body text,
+    footer text
+
+}
+
+create table dr.home {
+    id serial NOT NULL,
+    company_desc text,
+    invite text,
+    call_action text
+
+}
