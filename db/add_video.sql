@@ -1,7 +1,7 @@
-insert into videos (name,description,img,category_id)
+insert into dr.videos (name,description,img,category_id)
 values (
     ${name},
     ${description},
     ${img},
-    ${category_id},
+    ${heirarchy_id}
 )
