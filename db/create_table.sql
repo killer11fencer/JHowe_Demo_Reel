@@ -34,3 +34,22 @@ create table dr.home {
     call_action text
 
 }
+
+create table dr.referral {
+    id serial NOT NULL,
+    first_name varchar(255),
+    last_name varchar(255),
+    phone varchar(10),
+    email varchar(255),
+    project varchar(255)
+}
+
+create table dr.contact {
+    id serial NOT NULL,
+    intro varchar(255),
+    action varchar(255),
+    email varchar(255),
+    phone varchar(10),
+    address varchar(255)
+
+}
