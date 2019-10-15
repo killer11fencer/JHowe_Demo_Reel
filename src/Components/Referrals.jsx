@@ -5,14 +5,19 @@ class Referrals extends Component {
     constuctor(){
         super();
         this.state = {
-            referrals: []
+            referrals: [],
+            admin: false
         }
     }
     componentDidMount () {
+        this.get_admin()
         this.get_referrals()
     }
 get_referrals = () => {
     axios.get('api/referrals').then( result => {this.setState({referrals: result})})
+}
+get_admin = () => {
+    axios.get('api/admin').then(result => {this.setState({admin:result})})
 }
 render() {
     let display_referrals = this.state.referrals.map((referral,id) => {
