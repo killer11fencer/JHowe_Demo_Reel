@@ -13,6 +13,7 @@ class Referrals extends Component {
         this.get_admin()
         this.get_referrals()
     }
+
 get_referrals = () => {
     axios.get('api/referrals').then( result => {this.setState({referrals: result})})
 }
@@ -37,6 +38,7 @@ render() {
         </div>
     })
     return( <div>
+        
             {display_referrals}
     </div>)
 }

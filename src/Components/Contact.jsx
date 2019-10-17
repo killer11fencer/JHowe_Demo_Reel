@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import axios from 'axios'
 
 class Contact extends Component {
     constructor() {
@@ -12,8 +13,14 @@ class Contact extends Component {
             phone:''
         }
     }
+    componentDidMount() {
+        this.get_admin()
+    }
     handleChange = (e) => {
         this.setState({[e.target.name]:e.target.value})
+    }
+    get_admin = (e) => {
+        axios.get('api/admin').then(result=>{this.setState({admin:true})})
     }
     render() {
         return(
