@@ -9,6 +9,9 @@ class Home extends Component {
             highlights:[],
         }
     }
+    componentDidMount () {
+        axios.get('api/home').then(result=> {this.setState({highlights: result})})
+    }
     render() {
         return(
         <div className='Home'>
