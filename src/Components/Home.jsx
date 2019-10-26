@@ -12,6 +12,9 @@ class Home extends Component {
     componentDidMount () {
         axios.get('api/home').then(result=> {this.setState({highlights: result})})
     }
+    handleChange = (e) => {
+        this.setState({[e.target.name]: e.target.value})
+    }
     render() {
         return(
         <div className='Home'>
