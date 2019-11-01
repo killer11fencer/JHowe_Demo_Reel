@@ -18,9 +18,12 @@ handleChange = (e) => {
 }
 }
 render() {
+    let display_videos = this.state.videos.map((video,id)=> {
+        return {<div id={id}></div>}
+    }))
     return(
     <div>
-
+        <h5></h5>
     </div>)
 }
 
