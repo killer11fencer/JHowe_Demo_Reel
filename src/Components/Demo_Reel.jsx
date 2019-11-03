@@ -19,8 +19,12 @@ handleChange = (e) => {
 }
 render() {
     let display_videos = this.state.videos.map((video,id)=> {
-        return <div key={id}></div>
-    }))
+        return <div key={id}>
+        <h5>{video.title}</h5>
+        <h5>{video.url}</h5>
+        <h5>{video.description}</h5>
+        </div>
+    })
     return(
     <div>
         <h5></h5>
