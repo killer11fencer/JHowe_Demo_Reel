@@ -27,7 +27,7 @@ render() {
     })
     return(
     <div>
-        <h5></h5>
+        <h5>{display_videos}</h5>
     </div>)
 }
 
