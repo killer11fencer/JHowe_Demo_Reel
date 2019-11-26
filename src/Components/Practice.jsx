@@ -17,6 +17,8 @@ render () {
     return(
         <div>
             <h1>Hello</h1>
+            <button>Approve</button>
+            <input name='first_name' onChange={this.handleChange}/>
         </div>
     )
 }
