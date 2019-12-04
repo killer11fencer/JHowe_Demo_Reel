@@ -28,3 +28,5 @@ create table nc.file_name (
     inserted_at timestamp WITH time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
     updated_at  timestamp WITH time zone DEFAULT CURRENT_TIMESTAMP NOT NULL  
 )
+
+create table  something ()
