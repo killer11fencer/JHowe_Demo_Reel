@@ -6,6 +6,20 @@ create table nc.users (
     email varchar(100)
 )
 
+insert into nc.users (
+    first_name,
+    last_name,
+    admin,
+    email
+)
+
+values (
+    ${first_name},
+    ${last_name},
+    ${admin},
+    ${email}
+)
+
 create table nc.department (
     id serial NOT NULL,
     department_name varchar,
@@ -30,3 +44,4 @@ create table nc.file_name (
 )
 
 create table  something ()
+
