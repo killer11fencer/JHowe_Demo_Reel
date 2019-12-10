@@ -26,7 +26,10 @@ create table nc.department (
     department_abbr varchar,
     description_id integer,
 )
-
+insert into nc.department (
+    id serial NOT NULL,
+    
+)
 create table nc.description (
     id serial NOT NULL,
     description varchar(255)
@@ -44,4 +47,6 @@ create table nc.file_name (
 )
 
 create table  something ()
+
+create table 
 
