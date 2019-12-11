@@ -27,8 +27,14 @@ create table nc.department (
     description_id integer,
 )
 insert into nc.department (
-    id serial NOT NULL,
-    
+    department_name,
+    department_abbr,
+    description_id
+)
+value (
+    ${department_name},
+    ${department_abbr},
+    ${department_id}
 )
 create table nc.description (
     id serial NOT NULL,
