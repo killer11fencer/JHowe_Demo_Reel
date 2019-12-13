@@ -54,5 +54,10 @@ create table nc.file_name (
 
 create table  something ()
 
-create table 
+create table add something ()
+
+
+look up mutations
+
+
 
