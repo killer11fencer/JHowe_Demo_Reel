@@ -64,3 +64,5 @@ added new code
 start a new project about name convention
 
 data base ideas
+
+start coding tomorrow
