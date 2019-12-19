@@ -66,3 +66,10 @@ start a new project about name convention
 data base ideas
 
 start coding tomorrow
+
+practice
+React
+Javascript
+HTML
+CSS
+SQL
